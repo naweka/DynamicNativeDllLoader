@@ -13,11 +13,14 @@ Now you can load 86/64 native DLLs from a resource without writing them to disk.
 private delegate int functionDelegate(int x, int y);
 private static functionDelegate function;
 
-
+// Load resource
 var resource = Assembly.GetExecutingAssembly().GetManifestResourceStream("NativeDllRes");
 MemoryStream stream = new MemoryStream();
 resource.CopyTo(stream);
 data = stream.ToArray();
 dll = new DLLFromMemory(data);
+// Getting pointer to function
 function = dll.GetDelegateFromFuncName<functionDelegate>("func_name");
+
+// Invoke it.......
 ```
