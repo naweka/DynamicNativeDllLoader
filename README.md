@@ -19,5 +19,5 @@ MemoryStream stream = new MemoryStream();
 resource.CopyTo(stream);
 data = stream.ToArray();
 dll = new DLLFromMemory(data);
-function = dll.GetDelegateFromFuncName<functionDelegate>("p");
+function = dll.GetDelegateFromFuncName<functionDelegate>("func_name");
 ```
