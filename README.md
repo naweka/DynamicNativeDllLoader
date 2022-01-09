@@ -1,6 +1,6 @@
 # DynamicNativeDllLoader
 
-> This is fixed fork of [this](https://github.com/schellingb/DLLFromMemory-net) repo
+> _Note: This is fixed fork of [this](https://github.com/schellingb/DLLFromMemory-net) repo_
 
 ## What is it for?
 
